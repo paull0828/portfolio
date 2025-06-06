@@ -1,134 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Header Start Here -->
-    <header style="text-align: center">
-      <h1>Paul Papnol</h1>
-      <p>Web Developer & Designer</p>
-      <img
-        width="200px"
-        height="200px"
-        style="border-radius: 50%"
-        object-fit:
-        cover
-        src="./images/paul(photo).jpg"
-        alt="my photo"
-      />
-    </header>
-    <!-- Header end Here -->
-    <!-- About Section starts here -->
-    <section style="text-align: center; margin: 20px">
-      <h2>About Me</h2>
-      <p>
-        I am a passionate web developer with a keen interest in creating
-        interactive and user-friendly websites. I love coding and enjoy learning
-        new technologies.
-      </p>
-      <!-- About ends here -->
-    </section>
-    <!-- project starts here -->
-    <section style="text-align: center; margin: 20px">
-      <h2>My Projects</h2>
-      <article>
-        <h3>Project 1: Protfolio</h3>
+    <!-- Profile card  -->
+    <div class="profile-card">
+      <!-- Side bar -->
+      <div class="profile-sidebar">
         <img
-          width="300px"
-          src="./images/istockphoto-1371339413-1024x1024.jpg"
-          alt="project 1"
+          src="./images/paul(photo).jpg"
+          alt="Paul Papnol"
+          class="profile-photo"
         />
-        <p>
-          A personal portfolio website showcasing my skills, projects, and
-          contact information.
+        <h1>Paul Papnol</h1>
+        <p class="job-title">Full Stack Developer</p>
+        <p class="company">Udemy</p>
+      </div>
+      <!-- Side bar end -->
+      <!-- Main -->
+      <div class="profile-main">
+        <p class="bio">
+          Passionate Full Stack Developer with a focus on building scalable web
+          applications. Experienced in both frontend and backend technologies, I
+          thrive in collaborative environments and enjoy tackling complex
+          challenges. Let's connect and create something amazing together!
         </p>
-      </article>
-      <h2>My Projects</h2>
-      <article>
-        <h3>Project 2: E-Commerce Website</h3>
-        <img width="300px" src="./images/image.png" alt="project 2" />
-        <p>
-          An e-commerce website where users can browse products, add them to
-          their cart, and make purchases.
-        </p>
-      </article>
-      <!-- project ends here -->
-    </section>
-    <!-- skills start here -->
-    <section style="text-align: center; margin: 20px">
-      <h2>Skills</h2>
-      <ul style="list-style-type: none; padding: 0">
-        <li><i class="fa-brands fa-html5"></i> HTML</li>
-        <li><i class="fa-brands fa-css"></i> CSS</li>
-        <li><i class="fa-brands fa-js"></i> JavaScript</li>
-        <li><i class="fa-brands fa-react"></i> React</li>
-        <li><i class="fa-brands fa-node-js"></i> Node.js</li>
-        <!-- skills end here -->
-      </ul>
-    </section>
-    <!-- Contact Section starts here -->
-    <section style="text-align: center; margin: 20px">
-      <h2>Contact Me</h2>
-      <p>
-        If you would like to get in touch, feel free to reach out via email or
-        connect with me on social media.
-      </p>
-      <ul style="list-style-type: none; padding: 0">
-        <li>
-          <i class="fa-solid fa-envelope"></i>
-          <a href="mailto:paulpapnol18@gmail.com"> </a>
-        </li>
-        <li>
-          <i class="fa-brands fa-linkedin"></i>
-          <a href="https://www.linkedin.com/in/paul-papnol-123456789/"
-            >LinkedIn</a
-          >
-        </li>
-        <li>
-          <i class="fa-brands fa-twitter"></i>
-          <a href="https://twitter.com/paul_papnol">Twitter</a>
-        </li>
-        <li>
-          <i class="fa-brands fa-github"></i>
-          <a href="https://github.com/paull0828">GitHub</a>
-        </li>
-      </ul>
-      <p>
-        Thank you for visiting my portfolio! I look forward to connecting with
-        you.
-      </p>
-    </section>
-    <!-- Contact Section ends here -->
-    <!-- Contact Form start here -->
-    <section style="text-align: center; margin: 20px">
-      <h2>Contact Form</h2>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <br />
-        <br />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <br />
-        <br />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <br />
-        <br />
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+        <div class="contact-info">
+          <p>paulpapnol18@gmail.com • Ambernath</p>
+        </div>
+        <!-- social links -->
+        <div class="social-links">
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- skills -->
+        <div class="skills">
+          <span class="skill">Javascript</span>
+          <span class="skill">ReactJS</span>
+          <span class="skill">NodeJS</span>
+          <span class="skill">MongoDB</span>
+        </div>
+        <!-- Btn -->
+        <button class="cta-button">View Full Profile</button>
+      </div>
+    </div>
 
-    <!-- Contact form ends here -->
+    <!-- Profile card end -->
   </body>
 </html>
